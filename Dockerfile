@@ -55,7 +55,7 @@ EXPOSE 50000
 
 ENV COPY_REFERENCE_FILE_LOG $JENKINS_HOME/copy_reference_file.log
 
-USER ${user}
+USER root
 
 COPY jenkins.sh /usr/local/bin/jenkins.sh
 RUN sudo chmod 777 /usr/local/bin/jenkins.sh
